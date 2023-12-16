@@ -1,0 +1,51 @@
+.projects_container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.title{
+text-align: center;
+font-size: 3vw;
+ color:white;
+ font-weight:900;
+}
+.project_container{
+    padding: 50px;
+    border: 1px solid white;
+    display: flex;
+    margin-top:2vw ;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.project_description_container{
+display: flex;
+flex-direction: column;
+gap: 1.5vw;
+}
+.project_img{
+
+}
+.project_photo{
+    width: 25vw;
+}
+.project_name{
+font-size: 3vw;
+color: white;
+}
+.project_description{
+font-size: 1vw;
+color: rgb(187, 186, 186);
+
+}
+.project_stack{
+font-size: 1.2vw;
+color: rgb(180, 195, 245);
+}
+.git_link{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: rgb(247, 196, 196);
+}
+

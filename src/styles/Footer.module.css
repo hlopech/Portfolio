@@ -1,0 +1,19 @@
+.footer_container{
+margin-top: 5vw;
+padding: 1vw;
+  display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    justify-content: center;
+    gap: 2%;
+    color: aliceblue;
+    background-color: rgba(38, 26, 75, 0.8);
+    
+    }
+      .footerText{
+      }
+      .footer_copy{
+        display: flex;
+        text-align: center;
+      }
