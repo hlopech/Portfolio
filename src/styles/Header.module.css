@@ -10,7 +10,6 @@
     transition: background-color 0.3s ease;
     text-align: center; 
     backdrop-filter: blur(10px); 
-
   }
   .nav {
     display: flex; 
@@ -42,4 +41,13 @@
     font-weight: 900;
     color: white;
     text-decoration: none;
+  }
+
+  @media (max-width:600px) { 
+    .nav_item {
+      margin-right: 20px;
+      font-size: 25px;
+      transition: color 0.3s ease;
+      text-align: center;
+    }
   }

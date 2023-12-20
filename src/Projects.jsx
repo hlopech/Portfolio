@@ -10,7 +10,6 @@ export default function Projects() {
           <div key={p.id} className={styles.project_container}>
             <div className={styles.project_img}>
               <img className={styles.project_photo} src={p.gif} alt="gif" />
-              {/* <img className={styles.project_photo} src={p.img} alt="image" /> */}
             </div>
 
             <div className={styles.project_description_container}>
