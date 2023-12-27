@@ -19,7 +19,7 @@ export default function About() {
         <div className={styles.info_box1}>
           <span className={styles.name}>Nikita Starovoytov</span>
           <span className={styles.short_description}>
-            Junior front-end developer
+            Front-end developer
           </span>
           <div className={styles.contacts}>
             <span className={styles.contacts_field}>
@@ -51,7 +51,7 @@ export default function About() {
             </span>
 
             <span className={styles.contacts_field}>
-              <LocationOnIcon fontSize="inhernit" />
+              <LocationOnIcon fontSize="inhernit"/>
               <a
                 className={styles.info_link}
                 href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C/@53.8916752,27.5378813,12z/data=!4m6!3m5!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972!16zL20vMGRseGo?hl=ru&entry=ttu"
@@ -63,7 +63,7 @@ export default function About() {
           </div>
         </div>
       </div>
-
+      <div className={styles.info_box2}>
       <div className={styles.info_container}>
         <span className={styles.info_title}>Education</span>
         <span className={styles.info_description}>2nd year student</span>
@@ -72,114 +72,47 @@ export default function About() {
           Speciality : mathematics and information technology (mathematics and
           software for mobile devices)
         </span>
-      </div>
+        <span className={styles.info_description}>English level: B1 Intermediate</span>
 
-      <div className={styles.info_container}>
-        <span className={styles.info_title}>English level</span>
-        <span className={styles.info_description}>B1 Intermediate</span>
       </div>
-
       <div className={styles.info_container}>
         <span className={styles.info_title}>Work experience</span>
         <span className={styles.info_description}>Freelancing</span>
       </div>
-
-      <div className={styles.info_container}>
+      </div>
+      <div className={styles.skills_container}>
         <span className={styles.info_title}>Skills</span>
         <div className={styles.box2}>
-          <ul className={styles.skils}>
-            <li className={styles.skill}>
+          <div className={styles.skils}>
+            <div className={styles.skill}>
               <span className={styles.skil_name}> JavaScript(ES6)</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>React</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>Redux</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarHalfIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
+            </div>
 
-            <li className={styles.skill}>
+            <div className={styles.skill}>
               <span className={styles.skil_name}> Html , css</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>Figma</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>Tailwind</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>Json</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>SQL</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarHalfIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-            <li className={styles.skill}>
+            </div>
+            <div className={styles.skill}>
               <span className={styles.skil_name}>Github</span>
-              <div className={styles.rating}>
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-                <StarBorderIcon fontSize="inhernit" />
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div className={styles.animate_icons}>
             <div className={styles.container}>
               <img src="/images/icons/react.png" className={styles.circle} />

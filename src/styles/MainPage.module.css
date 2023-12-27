@@ -16,7 +16,7 @@ body{
     width: 55vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10% ;
+    padding-top:10% ;
     gap: 5vw;
   }
   @media (max-width:600px) { 
@@ -29,7 +29,26 @@ body{
       gap: 5vw;
     }
   }
-
+  @media (max-width:1000px) { 
+    .main_container{
+      margin: 0 auto;
+      width:90vw;
+      display: flex;
+      flex-direction: column;
+      margin-top: 15% ;
+      gap: 5vw;
+    }
+  }
+  @media (max-width:1300px) { 
+    .main_container{
+      margin: 0 auto;
+      width:80vw;
+      display: flex;
+      flex-direction: column;
+      margin-top: 15% ;
+      gap: 5vw;
+    }
+  }
 
 
 

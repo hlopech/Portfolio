@@ -1,6 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4vw;
 }
 .developer_info_container{
@@ -10,6 +11,7 @@
 }
 .photo_container{
     width: 30%;
+    height: 100%;
     border: solid 2px white;
 }
 .photo{
@@ -19,12 +21,17 @@
     display: flex;
     flex-direction: column;
 }
+.info_box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .name{
-    font-size: 4vw;
+    font-size: 50px;
     color: white;
 }
 .short_description{
-    font-size: 2.5vw;
+    font-size: 35px;
     color: white;
 }
 
@@ -39,7 +46,7 @@
 
     color: gray;
    text-align: center;
-   font-size: 1.2vw;
+   font-size: 20px;
 }
 .info_link{
     color: gray;
@@ -50,29 +57,37 @@
 display: flex;
 flex-direction: column;
 gap: 1vw;
+align-self: flex-start;
+justify-content: center;
 }
+.skills_container{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  }
 .info_title{
-    font-size: 2vw;
+    font-size: 30px;
     color:white;
 }
 
 .info_description{
-font-size: 1vw;
+font-size: 18px;
 color:white;
+width: 25vw;
 }
 
 .skils{
     width: 15vw;
     text-decoration: none;
     list-style-type: none;
-    font-size: 1vw;
+    font-size: 20px;
     color: white;
     margin-top: 5vw;
 }
 .skill{
     justify-content: space-between; 
     margin-bottom:0.5vw;
-
     display: flex;
     align-items: center;
 }
@@ -84,10 +99,9 @@ color:white;
 }
 .box2{
     display: flex;
-    gap: 10vw;
-}
+    justify-content: space-between;
+  }
 .animate_icons{
-
 display: flex;
 justify-content: center;
 }
@@ -97,13 +111,12 @@ justify-content: center;
     height: 30vw;
     position: relative;
     border-radius: 50%;
-    /* margin: 50px auto; */
   }
   
   .circle {
     z-index: 0;
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height:4vw;
     /* border-radius: 50%; */
     position: absolute;
     top: 50%;
@@ -156,13 +169,19 @@ justify-content: center;
 
   
   @media (max-width:600px) { 
+    .main{
+      display: flex;
+      flex-direction: column;
+    }
+ 
+
     .developer_info_container{
       align-items: center;
       justify-content: center;
       display: flex;
       gap: 5vw;
       width: 100%;
-    flex-direction: column;
+      flex-direction: column;
   }
   
   .name{
@@ -174,6 +193,13 @@ justify-content: center;
   color: white;
 }
 
+.skills_container{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  text-align: center;  
+}
 .contacts{
   justify-content: center;
   display: flex;
@@ -182,7 +208,6 @@ justify-content: center;
   gap: 1vw;
 }
 .contacts_field{
-  /* align-self: flex-start; */
   color: gray;
  text-align: center;
  font-size: 3vw;
@@ -201,42 +226,34 @@ justify-content: center;
       font-size: 6vw;
       margin-top: 5vw;
       margin-bottom: 5vw;
-
       color:white;
   }
   
   .info_description{
   font-size: 3vw;
   color:white;
+
   }
   
   .skils{
       width: 100%;
-      text-decoration: none;
-      list-style-type: none;
-      font-size: 3vw;
+      font-size:20px;
       color: white;
       margin-top: 5vw;
+      text-align: center;
   }
   .skill{
-      justify-content: space-between; 
-      margin-bottom:0.5vw;
-  
-      display: flex;
-      align-items: center;
-  }
-  .rating{
-      display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
   }
   .skil_name{
-  
   }
   .box2{
       display: flex;
-      align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 10vw;
   }
 
   .container {
@@ -244,15 +261,14 @@ justify-content: center;
     height: 10vw;
     position: relative;
     border-radius: 50%;
-    margin: 10px auto;
-    padding-bottom:70vw;
+    margin: 40px auto;
+    padding-bottom:50vw;
   }
   
   .circle {
     z-index: 0;
-    width: 60px;
-    height: 60px;
-    /* border-radius: 50%; */
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -269,4 +285,20 @@ justify-content: center;
     }
   }
 
+  }
+  @media (max-width:768px) { 
+    .name{
+      font-size: 35px;
+      color: white;
+  }
+  .short_description{
+    font-size: 20px;
+  }
+  .contacts_field{
+    font-size: 19px;
+  }
+  }
+  @media (max-width:1000px) { 
+  }
+  @media (max-width:1300px) { 
   }

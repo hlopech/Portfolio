@@ -13,11 +13,17 @@ export default function Projects() {
             </div>
 
             <div className={styles.project_description_container}>
-              <span className={styles.project_name}>{p.name}</span>
+              <a className={styles.name_link} href={p.link}>{p.name}</a>
               <span className={styles.project_description}>
                 {p.short_description}
               </span>
-              <span className={styles.project_stack}>{p.stack}</span>
+              <span className={styles.project_stack}>
+                <div className={styles.stack_list}>
+                  {p.stack.map((t) => (
+                    <span className={styles.stack} key={t}>{t}</span>
+                  ))}
+                </div>
+              </span>
               <span>
                 <a className={styles.git_link} href={p.link}>
                   {p.link}
